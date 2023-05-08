@@ -1,0 +1,1245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    counter-reset: my-list-counter;
+}
+::selection {
+    color: #fff;
+    background: #1782D4;
+  }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1782d49f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1782D4;
+}
+
+/* header CSS start */
+.logo {
+    width: 140px;
+}
+
+.custom_header nav {
+    padding: 20px 0px;
+}
+
+header.custom_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header.custom_header.bg-white {
+    border-bottom: 1px solid #F5F4F9;
+}
+
+.navbar-toggler span i {
+    transition: 0.5s all ease;
+}
+
+header .mainHeader ul li {
+    padding: 0 12px;
+}
+
+header .mainHeader ul li a {
+    font-family: "Lato", arial;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+header .mainHeader ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: 0.5s all ease;
+    opacity: 0;
+}
+
+header .mainHeader ul li a.active:before {
+    opacity: 1;
+}
+
+header .mainHeader ul li a:hover {
+    color: #0164b2;
+}
+
+header .mainHeader ul li a:hover:before {
+    opacity: 1;
+    background: #0164b2;
+}
+
+.custom_dropdown .dropdown-menu-dark {
+    color: #fff;
+    background-color: #0164b2;
+    border-color: #0164b2;
+}
+
+ul.custom_dropdown_item {
+    padding: 0;
+}
+
+ul.custom_dropdown_item li {
+    padding: 0 !important;
+}
+
+ul.custom_dropdown_item li a.dropdown-item {
+    padding: 10px;
+    text-align: center;
+}
+
+ul.custom_dropdown_item li a.dropdown-item {
+    background: #0164b2;
+    color: #fff;
+    border-color: #0164b2;
+    border-width: 1px;
+    border-style: solid;
+}
+
+ul.custom_dropdown_item li a.dropdown-item:hover {
+    background: #fff;
+    color: #0164b2;
+}
+
+ul.custom_dropdown_item li a.dropdown-item:hover:before {
+    display: none;
+}
+.showMobile{
+    display: none;
+}
+/* header CSS end */
+/* banner section CSS start */
+.bannerSection {
+    background-image: url(../images/tzort-home-banner.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bannerSection:after {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFFFFF 35%, #FFFFFF00 80%);
+    opacity: 0.75;
+    content: '';
+    z-index: -1;
+}
+
+.main_heading h1 {
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+p.bold_para {
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+p.para {
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+/* banner section CSS end */
+
+/* online accomodation CSS start */
+.onlineAccomodationSection {
+    padding: 125px 0px 125px 0px;
+}
+
+.img_accomodation img {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main_heading h2 {
+    font-family: "Work Sans", arial;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #303038;
+}
+
+/* online accomodation CSS end */
+
+/* why use CSS start */
+.whyUseSection {
+    background-color: #F6F6F6;
+}
+
+.box_whyuse {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    padding: 40px 30px 75px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box_whyuse .icon_box svg {
+    fill: #1782D4;
+    width: 80px;
+    height: 80px;
+}
+
+.main_heading h3 {
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/* why use CSS end */
+
+/* trusted resort CSS start */
+.trusted_resort_section {
+    padding: 125px 0px 125px 0px;
+}
+
+.trusted_resort_section .trusted_resort_section_bg {
+    background-image: url(../images/Trusted-resort.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 130px 130px 130px 130px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.trusted_resort_section_bg:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.75;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #F5F4F9 55%, #FFFFFF00 100%);
+    opacity: 0.76;
+    z-index: -1;
+}
+
+/* trusted resort CSS end */
+
+/* travel resort CSS start */
+.travel_card .travel_card_img img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px 12px 12px 12px;
+}
+
+/* travel resort CSS end */
+
+/* review section CSS start */
+.reviews_section {
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+}
+
+.reviews_slider_box {
+    border-radius: 12px;
+    background: #fff;
+    padding: 30px 20px;
+    margin: 0 10px;
+    /* min-height: 420px; */
+}
+
+.reviews_slider_box .reviews_slider_box_info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review_rating ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.reviews_slider_contact {
+    margin-left: 20px;
+}
+
+.reviews_slider_img img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.review_rating ul li i {
+    color: #FFCD51;
+}
+
+.review_location span {
+    color: #697882;
+    font-size: 12.5px;
+    font-weight: 400;
+    font-family: "Work Sans", arial;
+}
+
+.reviews_slider .slick-arrow {
+    display: none !important;
+}
+
+.reviews_slider .slick-dots {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.reviews_slider .slick-dots li button {
+    border-radius: 50%;
+    width: 10px;
+    height: 12px;
+    border: none;
+    background: #D8D8D8;
+    margin: 0 10px;
+    font-size: 0;
+}
+
+.reviews_slider .slick-dots li.slick-active button {
+    background: #1782D4;
+}
+
+/* review section CSS end */
+
+/* guranteed CSS start */
+.guranteed_section {
+    padding: 125px 0;
+}
+
+.guranteed_section_bg {
+    background-color: #1782D4;
+    padding: 60px 60px 60px 60px;
+    border-radius: 12px;
+}
+
+/* guranteed CSS end */
+
+/* ready to travel CSS start */
+.ready_to_travel_section {
+    padding: 0 0 125px 0;
+}
+
+.custom_btn {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #1782D4;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 50%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1782D4;
+    border-radius: 50px;
+    font-family: "Lato", arial;
+    font-size: 20px;
+    width: max-content;
+    padding: 0 40px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease;
+}
+
+.custom_btn:hover {
+    background-color: #fff;
+    color: #1782D4;
+    transform: scale(1.1);
+}
+
+.association_images ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.association_images ul li img {
+    width: 200px;
+}
+
+/* ready to travel CSS end */
+
+/* FQS CSS start */
+.faqs_section {
+    background-color: #F6F6F6;
+    padding-bottom: 40px;
+}
+
+.custom_accordion h2.accordion-header button {
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.3em;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px !important;
+}
+
+.custom_accordion .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #efefef !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+}
+
+.custom_accordion .accordion-button:not(.collapsed) {
+    background: #1782D4 !important;
+    color: #fff !important;
+}
+
+.custom_accordion .accordion-button:not(.collapsed):after {
+    filter: invert(1) brightness(11);
+}
+
+.custom_accordion .accordion-item .accordion-body p.para a {
+    text-decoration: underline;
+    color: #0164B2;
+    transition: 0.5s all ease;
+}
+
+.custom_accordion .accordion-item .accordion-body p.para a:hover {
+    text-decoration: none !important;
+}
+
+/* FQS CSS end */
+
+/* footer CSS start */
+footer {
+    background-color: #303038;
+    padding: 70px 0 0 0;
+}
+
+.footer_logo img {
+    width: 200px;
+}
+
+.footer_anchor_list ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.5s all ease;
+    font-family: "Work Sans", arial;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.footer_anchor_list ul li a:hover {
+    color: #0164B2;
+}
+
+.footer_anchor_list ul {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer_anchor_list ul li:before {
+    position: absolute;
+    content: '\f105';
+    font-family: "Font Awesome 5 Pro";
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.footer_anchor_list.footer_anchor_list_info ul li:before {
+    display: none;
+}
+
+.footer_anchor_list ul li {
+    position: relative;
+    width: max-content;
+}
+
+.footer_anchor_list ul li a i {
+    margin-right: 15px;
+}
+
+.social_icons ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.social_icons ul li a {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 5px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #0164B2;
+    transition: 0.5s all ease;
+}
+
+.social_icons ul li a:hover {
+    background: #0164B2;
+    color: #fff;
+}
+
+.footer_anchor_list.footer_anchor_list_info ul li {
+    width: 100%;
+}
+
+.footer_anchor_list.footer_anchor_list_info ul li a {
+    padding-left: 0;
+}
+
+.footer_separator {
+    position: relative;
+}
+
+.footer_separator::before {
+    position: absolute;
+    content: '';
+    width: 1.5px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #E4E3DF45;
+}
+
+.footer_separator:nth-last-child(1)::before {
+    display: none;
+}
+
+.copyright {
+    background: #000;
+    margin-top: 40px;
+}
+
+.copyright_text p.para a {
+    transition: 0.5s all ease;
+}
+
+.copyright_text p.para a:hover {
+    color: #0164B2 !important;
+}
+
+/* footer CSS end */
+
+/* about CSS start */
+.aboutBannerSection {
+    background-image: url(../images/about-banner.jpg);
+}
+
+.img_accomodation.img_accomodation_about img {
+    width: 100%;
+    height: auto;
+}
+
+/* guranteed CSS start */
+.guranteed_about_section {
+    padding: 0 0 125px 0;
+}
+
+.guranteed_about_section_bg {
+    background-color: transparent;
+    padding: 60px;
+    border-radius: 12px;
+    border: 1px solid #E4E4E4
+}
+
+/* guranteed CSS end */
+
+/* vacation deserve CSS start */
+.vacation_deserve_section {
+    background-color: #1782D4;
+    padding: 100px 0px 110px 0px;
+}
+
+.custom_btn.bg-white {
+    color: #1782D4;
+}
+
+/* vacation deserve CSS end */
+/* about CSS end */
+
+/* contact CSS start */
+.contactSection {
+    height: calc(95vh + 105px);
+    display: flex;
+    align-items: center;
+}
+
+.contactInfo span {
+    font-family: "Work Sans", arial;
+    font-size: 18px;
+}
+
+.contactInfo span a {
+    color: #0164B2;
+}
+
+.contactInfo span a:hover {
+    text-decoration: none;
+}
+
+.custom_input {
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 16px;
+    min-height: 47px;
+    padding: 6px 16px;
+    border: 1px solid #818a91;
+    color: #373a3c;
+    transition: all .3s;
+}
+
+textarea.custom_input {
+    resize: none;
+    height: 105px;
+}
+
+.custom_input::placeholder {
+    color: #697882;
+}
+
+.custom_input::-webkit-input-placeholder {
+    /* Edge */
+    color: #697882;
+}
+
+.custom_input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #697882;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.custom_input::-webkit-outer-spin-button,
+.custom_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.custom_input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* contact CSS end */
+
+/* community CSS start */
+.communityBannerSection {
+    background-image: url(../images/community-bg.jpg);
+}
+
+.meet_team_section {
+    background-color: #F5F4F9;
+    padding-bottom: 75px;
+}
+
+.card_team {
+    background: #fff;
+    border-radius: 12px;
+}
+
+.contentBox {
+    padding: 60px 70px 60px 70px;
+}
+
+.card_team img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.providing_service_section {
+    padding-bottom: 75px;
+}
+
+.meet_team_section {
+    padding-bottom: 75px;
+}
+
+.card_team.with_border {
+    border: 1px solid #F5F4F9;
+}
+
+/* community CSS end */
+
+/* testimonial CSS start */
+.testimonialBannerSection {
+    background-image: url(../images/Testimonial-Banner-Image.jpg);
+    height: calc(50vh + 105px);
+    padding-top: 115px;
+}
+
+.testi_reviews_section {
+    padding: 75px 0;
+}
+
+.testi_reviews_section .reviews_slider_box {
+    border: 2px solid #F5F4F9;
+    border-radius: 10px;
+}
+
+.reviewListContainer {
+    /* display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 2330px; */
+    gap: 2rem;
+    column-count: 3;
+    list-style: none;
+    padding-left: 0;
+}
+
+.review_item {
+    margin-bottom: 25px;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+}
+
+/* testimonial CSS end */
+
+/* blog CSS start */
+.blogSection{
+    padding: 175px 0 75px 0;
+}
+.custom_card{
+    border: 1px solid #f5f4f9;
+    border-radius: 12px;
+    transition: 0.5s all ease;
+    margin-bottom: 25px;
+}
+.card_header a{
+    display: block;
+    position: relative;
+}
+.card_header a::before{
+    display: block;
+    content: "";
+    background-image: linear-gradient(0deg,rgba(0,0,0,.35),transparent 75%);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+.custom_card:hover .card_header a::before{
+    opacity: .5;
+}
+.card_header img{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    min-height: 310px;
+}
+.card_body{
+    padding: 15px 25px;
+    min-height: 265px;
+}
+.card_body .main_heading a{
+    color: #0164b2;
+    text-decoration: underline;
+    font-size: 17px;
+    display: block;
+    width: max-content;
+    font-weight: 500;
+}
+.card_body .main_heading a:hover{
+    text-decoration: none;
+}
+.card_footer{
+    border-top: 1px solid #eaeaea;
+    padding: 10px 25px;
+}
+.card_footer span{
+    line-height: 1.3em;
+    font-size: 12px;
+    color: #adadad;
+    position: relative;
+}
+.main_heading h4{
+    color: #303038;
+    font-family: "Work Sans", arial;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2em; 
+}
+.card_footer span:nth-child(2) {
+    padding-left: 25px;
+}
+.card_footer span:nth-child(2):before {
+    content: '\f6aa';
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    top: -10px;
+    left: -2px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #adadad;
+    font-weight: bold;
+    font-size: 22px;
+}
+.card_body .main_heading a i {
+    text-decoration: underline;
+}
+.card_body .main_heading a:hover i {
+    text-decoration: none;
+}
+.custom_input_blog{
+    position: relative;
+}
+.custom_input_blog input{
+    border-radius: 3px;
+    color: #55595c !important;
+    background: #eceeef;
+    border-radius: 3px;
+    border: none;
+    padding: 12px 20px;
+    padding-right: 65px;
+}
+.custom_input_blog::placeholder {
+    color: #697882;
+}
+
+.custom_input_blog::-webkit-input-placeholder {
+    /* Edge */
+    color: #697882;
+}
+
+.custom_input_blog:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #697882;
+}
+.custom_input_blog input:focus{
+    background-color: #eceeef;
+    border: none;
+}
+.custom_input_blog .blog_search_icon{
+    background-color: #0164b2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+}
+.custom_input_blog .blog_search_icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100%;
+}
+.blog_search_icon{
+    cursor: pointer;
+}
+.blog_right_box{
+    border: 2px solid #f5f4f9;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+    border-top: 4px solid #0164b2;
+}   
+.blog_details_list ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+.blog_details_list ul li{
+    margin: 0 15px;
+    position: relative;
+}
+.blog_details_list ul li:first-child{
+    margin-left: 0px;
+}
+.blog_details_list ul li:first-child:before{
+    display: none;
+}
+.blog_details_list ul li:before{
+    content: '\f0c8';
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 7px;
+}
+.blog_details_list ul li a{
+    color: #0164b2;
+    text-decoration: underline;
+    font-family: "Lato", arial;
+    font-weight: 300;
+}
+.blog_details_list ul li a:hover{
+    text-decoration: none;
+}
+a.anchor{
+    color: #0164b2;
+    text-decoration: underline;
+    display: block;
+    width: max-content;
+}
+a.anchor:hover{
+    text-decoration: none;
+}
+.social_icon_listing_blog ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+.social_icon_listing_blog ul li:first-child{
+    margin-left: 0;
+}
+.social_icon_listing_blog ul li:nth-last-child(1){
+    margin-right: 0;
+}
+.social_icon_listing_blog ul li{
+    margin: 0px 5px;
+}
+.social_icon_listing_blog ul li a{
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(90deg,rgba(0,0,0,.12),transparent);
+    display: flex;
+    align-items: center;
+    transition: 0.5s all ease;
+}
+.social_icon_listing_blog ul li span{
+    padding: 0 10px;
+}
+.social_icon_listing_blog ul li a i{
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: 0.5s all ease;
+}
+.social_icon_listing_blog ul li a:hover{
+    filter: saturate(1.5) brightness(1.2);
+}
+.facebook_c i{
+    background-color: #3b5998;
+}
+.facebook_c a{
+    background-color: #334e85;
+}
+.twitter_c i{
+    background-color: #1da1f2;
+}
+.twitter_c a{
+    background-color: #1b96e1;
+}
+.linkedin_c i{
+    background-color: #0077b5;
+}
+.linkedin_c a{
+    background-color: #006da6;
+}
+.tumblr_c i{
+    background-color: #35465c;
+}
+.tumblr_c a{
+    background-color: #303f53;
+}
+.reddit_c i{
+    background-color: #ff4500;
+}
+.reddit_c a{
+    background-color: #e53e00;
+}
+.border_radius{
+    border-radius: 12px;
+}
+/* blog CSS end */
+
+/* community fee CSS start */
+.communityFeeBannerSection{
+    background-image: url(../images/community-banner.jpg);
+}
+/* community fee CSS end */
+
+/* terms and conditions CSS start */
+.terms_content_section{
+    padding-top: 130px;
+    padding-bottom: 75px;
+}
+.terms_list_counter ul{
+    list-style: none;
+}
+.terms_list_counter ul li{
+    position: relative;
+}
+.terms_list_counter ul li:before{
+    counter-increment: my-list-counter;
+    content: counter(my-list-counter)".";
+    position: absolute;
+    left: -15px;
+    font-weight: 500;
+}
+.terms_list_counter ul li {
+    padding-left: 15px;
+}
+.terms_list_counter.privacy_counter ul li:before{
+    font-weight: 400;
+}
+.table_privacy tbody tr td, .table_privacy tbody tr th{
+    padding: 15px;
+}
+.table_privacy tbody tr td {
+    width: 50%;
+}
+/* terms and conditions CSS end */
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .card_body{
+        min-height: 320px;
+    }
+}
+@media (max-width: 1024px) and (max-width: 1300px) {
+    /* .reviews_slider_box {
+        min-height: 520px;
+    } */
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .mainHeader.collapse {
+        background: #0164b1;
+        margin-top: 15px;
+    }
+
+    .mainHeader.collapse ul li a {
+        color: #fff;
+    }
+
+    .mainHeader.collapse ul li a::before {
+        display: none;
+    }
+
+    header .mainHeader.collapse ul li a:hover {
+        color: #0164b1;
+    }
+
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+
+    .collapse.mainHeader:not(.show) {
+        display: none !important;
+    }
+
+    .bannerSection {
+        background-position: center left;
+    }
+
+    .img_accomodation img {
+        /* height: 50vh; */
+        width: 100%;
+    }
+
+    .trusted_resort_section .trusted_resort_section_bg {
+        padding: 130px 15px 130px 15px;
+    }
+
+    .guranteed_section_bg {
+        padding: 25px;
+    }
+
+    .guranteed_about_section_bg {
+        padding: 25px;
+    }
+
+    .footer_separator::before {
+        display: none;
+    }
+
+    .contentBox {
+        padding: 35px 45px 35px 45px;
+    }
+
+    .reviewListContainer {
+        column-count: 2;
+    }
+    .showMobile{
+        display: block;
+    }
+    .contactSection {
+        height: calc(100vh + 190px);
+    }
+    .reviews_slider_box {
+        min-height: auto;
+    }
+    .blog_details_list ul {
+        display: block;
+    }
+    .blog_details_list ul li:first-child{
+        margin-left: 15px;
+    }
+    .blog_details_list ul li:first-child:before{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 35px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .association_images ul {
+        display: block;
+        text-align: center;
+    }
+
+    .association_images ul li {
+        margin: 25px 0;
+    }
+
+    .reviewListContainer {
+        column-count: 1;
+    }
+    .card_body{
+        min-height: 200px;
+    }
+    .social_icon_listing_blog ul li {
+        margin-bottom: 20px;
+    }
+}
